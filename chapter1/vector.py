@@ -15,10 +15,10 @@ class Vector:
     def __mul__(self, scalar: int) -> Vector:
         return Vector(self.x * scalar, self.y * scalar)
 
-    def __abs__(self):
+    def __abs__(self) -> float:
         return math.hypot(self.x, self.y)
 
-    def __bool__(self):
+    def __bool__(self) -> bool:
         return bool(abs(self))
 
     def __repr__(self) -> str:
