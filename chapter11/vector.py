@@ -2,7 +2,7 @@ import math
 from array import array
 
 
-class Vector:
+class Vector2d:
     typecode = 'd'
 
     def __init__(self, x, y) -> None:
@@ -54,4 +54,4 @@ class Vector:
         return hash((self.x, self.y))
 
 
-print(repr(Vector(1, 2)))
+print(repr(Vector2d(1, 2)))
