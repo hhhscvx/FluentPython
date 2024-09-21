@@ -18,7 +18,8 @@ print(list(map(operator.mul, range(11), itertools.repeat(5))))  # все в rang
 
 animals = ['duck', 'eagle', 'rag', 'giraffe', 'bear', 'bat', 'dolphin', 'shark', 'lion']
 
-for char, group in itertools.groupby(sorted(animals, key=len), key=len):
+for char, group in itertools.groupby(sorted(animals, key=len), key=len): # т.е. смарт использовать с sorted, с тем же key
+    
     print(f'{char} -> {list(group)}')
 
 for char, group in itertools.groupby('LLLLAAGGG'):  # встречающиеся подряд совпадающие по key
